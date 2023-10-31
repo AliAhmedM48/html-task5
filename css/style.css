@@ -1157,7 +1157,7 @@ textarea::placeholder {
 /* Medium devices (landscape tablets, 992px and down) */
 @media only screen and (max-width: 1377px) {
     body {
-        background-color: rgb(247, 192, 192);
+/*         background-color: rgb(247, 192, 192); */
 
     }
 
@@ -1198,7 +1198,7 @@ textarea::placeholder {
 
 @media only screen and (max-width: 992px) {
     body {
-        background-color: red;
+/*         background-color: red; */
     }
 
     #about .about-text .about-data .left {
@@ -1234,7 +1234,7 @@ textarea::placeholder {
 /* Small devices (portrait tablets and large phones, 768px and down) */
 @media only screen and (max-width: 768px) {
     body {
-        background-color: lime;
+/*         background-color: lime; */
     }
 
     #header .navigational-list li {
@@ -1310,7 +1310,7 @@ textarea::placeholder {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     body {
-        background-color: red;
+/*         background-color: red; */
     }
 
     .container {
