@@ -140,6 +140,14 @@ img {
     display: inherit;
 }
 
+#header .burger-menu {
+    color: var(--pink);
+    font-size: 32px;
+    float: right;
+    margin-top: 10px;
+    display: none;
+}
+
 #header .logo {
     /* background-color: rgb(64, 197, 197); */
     float: left;
@@ -187,7 +195,7 @@ img {
     background-image: url(../images/hero\ img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0% 20%;
+    background-position: center center;
     min-height: 100dvh;
     background-color: rgba(0, 0, 0, 0.8);
     background-blend-mode: overlay;
@@ -204,6 +212,7 @@ img {
     ➡ background-color: teal; ⬅
     margin: -10vh;
 }👈*/
+
 #home .container {
     padding-top: 41dvh;
 }
@@ -423,7 +432,7 @@ img {
     display: flow-root;
 
     float: left;
-    width: 360px;
+    width: 30%;
 
     border-radius: 5px;
     box-shadow: 0 0 0 8px #555555 inset;
@@ -504,7 +513,7 @@ img {
     float: left;
     padding-left: 100px;
     /* padding-right: 150px; */
-    width: calc(100% - 360px);
+    width: calc(100% - 30%);
     /* width: 100%; */
 }
 
@@ -639,8 +648,6 @@ img {
     width: calc(100% / 4);
     /* background-color: rgba(69, 8, 131, 0.263); */
     padding: 40px 15px;
-
-
 }
 
 #services h2 {
@@ -744,7 +751,6 @@ img {
     padding-block: 100px;
     text-align: center;
     background-color: var(--light-bgc);
-
 }
 
 #facts-area .cards {
@@ -1147,16 +1153,258 @@ textarea::placeholder {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {}
 
-/* Large devices (laptops/desktops, 1200px and down) */
-@media only screen and (max-width: 1200px) {}
 
 /* Medium devices (landscape tablets, 992px and down) */
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 1377px) {
+    body {
+        background-color: rgb(247, 192, 192);
+
+    }
+
+    .container {
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    #about .wrap {
+        padding-inline: 0%;
+    }
+
+    #about .about-text {
+        /* background-color: rgb(220, 202, 198); */
+        float: left;
+        padding-left: 60px;
+        /* padding-right: 150px; */
+        width: calc(100% - 30%);
+        /* width: 100%; */
+    }
+
+    #testimonial .feedback-card {
+
+        width: 80%;
+
+    }
+
+    #blog {
+        padding: 100px 20px;
+    }
+
+    #contact form {
+        padding-inline: 150px;
+
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        background-color: red;
+    }
+
+    #about .about-text .about-data .left {
+        float: none;
+        width: 50%;
+    }
+
+    #about .about-box {
+        display: flow-root;
+        float: none;
+        margin: auto;
+        width: 50%;
+    }
+
+    #about .about-text {
+        /* background-color: rgb(220, 202, 198); */
+        float: none;
+        padding-left: 0;
+        width: 90%;
+        margin: auto;
+        line-height: 1;
+        margin-top: 70px;
+    }
+
+    #services .cards .single-card {
+        float: left;
+        width: calc(100% / 2);
+
+
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 768px and down) */
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lime;
+    }
+
+    #header .navigational-list li {
+        padding-inline: 4px;
+    }
+
+    #portfolio .cards {
+        display: flow-root;
+    }
+
+    #portfolio .cards .first-row,
+    #portfolio .cards .second-row {
+        display: flow-root;
+        float: left;
+        width: 50%;
+
+    }
+
+
+
+    #portfolio .cards .first-row .single-card,
+    #portfolio .cards .second-row .single-card {
+        float: none;
+        width: 100%;
+        margin-bottom: 30px;
+        padding-inline: 15px;
+
+    }
+
+
+    #services h2 {
+        margin-bottom: 60px;
+    }
+
+    #services .cards .single-card {
+
+        padding: 0 15px;
+    }
+
+    #facts-area .cards .single-card {
+        width: calc(100% / 2);
+        padding: 20px;
+    }
+
+    #facts-area {
+        padding-block: 50px;
+        text-align: center;
+        background-color: var(--light-bgc);
+    }
+
+    #testimonial .feedback-card {
+
+        width: 100%;
+
+    }
+
+    #blog .cards .single-card {
+        float: left;
+        width: calc(100% / 1);
+        /* position: relative; */
+        padding-inline: 10px;
+        text-align: left;
+        margin-bottom: 50px;
+
+    }
+
+    #contact form {
+        padding-inline: 0;
+
+    }
+}
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: red;
+    }
+
+    .container {
+        width: 95%;
+        margin-inline: auto;
+    }
+
+    #services .cards .single-card {
+        width: calc(100% / 1);
+
+
+    }
+
+    #testimonial .feedback-card img {
+        width: 110px;
+        border-radius: 100%;
+        float: none;
+
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: 50;
+        top: 10%;
+        left: 10%;
+        display: inline-block;
+    }
+
+    #testimonial .feedback-card .feedback-text {
+        padding-left: 0px;
+        width: 100%;
+        margin-top: 150px;
+        text-align: justify;
+        float: none;
+    }
+
+    #header .burger-menu {
+
+        display: inline-block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    #header .navigational-list {
+        float: none;
+        position: absolute;
+        background-color: var(--dark-gray);
+        width: 35%;
+        top: 58px;
+        right: 0;
+        text-align: center;
+        border-top: 1px solid var(--pink);
+        display: none;
+    }
+
+    #header .navigational-list li {
+        display: block;
+        padding-inline: 10px;
+        /** padding as margin-inline for a tag */
+        padding-block: 20px;
+        margin: auto;
+        width: 100%;
+        /* background-color: rgb(193, 116, 116); */
+        border-bottom: 1px solid var(--pink);
+
+    }
+
+    #header .navigational-list li a {
+        /* background-color: rgb(191, 34, 34); */
+        padding-block: inherit;
+        color: var(--white);
+        transition: 0.5s 0s color;
+        font-weight: 200;
+        width: 60%;
+
+    }
+
+    #header .burger-menu:hover+ul {
+
+        display: block;
+    }
+
+    #header ul:hover {
+
+        display: block;
+    }
+}
 
 /* #endregion */
